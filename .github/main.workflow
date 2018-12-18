@@ -13,6 +13,5 @@ action "GitHub Action for Docker" {
 
 action "GitHub Action for Docker-1" {
   uses = "actions/docker/cli@76ff57a"
-  args = "uname -a"
-  runs = "sh"
+  args = "version"
 }
