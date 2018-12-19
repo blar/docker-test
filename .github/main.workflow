@@ -11,7 +11,7 @@ action "GitHub Action for Docker" {
 action "Docker Registry" {
   uses = "actions/docker/login@76ff57a"
   needs = ["GitHub Action for Docker"]
-  args = "--username $DOCKER_USERNAME --password-stdin $DOCKER_PASSWORD"
+  args = "--username $DOCKER_USERNAME --password $DOCKER_PASSWORD"
   secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
 }
 
